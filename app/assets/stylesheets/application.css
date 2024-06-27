@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ * {
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  /*header {
+    background-color: #FFBF00;
+    height: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  header a {
+    color: black; 
+    text-decoration: none; 
+  }
+
+  header h1 {
+    color: black;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .header-list {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 300px;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header li {
+    list-style: none;
+    margin-right: 30px;
+  }
+
+  */
+  
+p.noto-sans-japanese {
+  font-family: "Noto Sans JP", serif!important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body.noto-sans-japanese {
+  font-family: "Noto Sans JP", serif!important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}

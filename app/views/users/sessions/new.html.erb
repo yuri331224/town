@@ -1,0 +1,40 @@
+<div class="login">
+  <div class="log_in_box">
+    <div class="titlelogin">
+      <div class="titlelogin2">
+        ログイン
+      </div>
+    </div>
+
+    <div class="field_area_login">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"field_input", :placeholder =>"メールアドレス" %>
+        </div>
+
+        <div class="field">
+          <%= f.password_field :password, autocomplete: "off", class:"field_input", :placeholder =>"パスワード" %>
+        </div>
+
+        <div class="field">
+          <% if devise_mapping.rememberable? %>
+            <%= f.check_box :remember_me, class:"field_input2" %>
+            <div class="hozon">
+              ログイン情報を保存する
+            </div>
+          <% end %>
+        </div>
+
+        <div class="field_area_login2">
+          <div class="field">
+            <%= f.submit "ログイン", class:"field_input" %>
+          </div>
+        </div>
+
+<div class="share">
+      <%= render "users/shared/links" %>
+      <% end %>
+</div>
+    </div>
+  </div>
+</div>

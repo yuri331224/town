@@ -1,0 +1,71 @@
+<div class="post_detail">
+  <div class="post_detail_field">
+    <div class="post_detail_title">
+    ◀ 投稿詳細 ▶
+    </div>
+
+<div class="detail_about">
+  <%= @town.about %>
+</div>
+
+<div class="detail_time">
+  <%= @town.created_at %>
+</div>
+
+<div class="detail_heart">
+  <% if user_signed_in? %>
+      <% if current_user.already_liked?(@town) %>
+        <%= button_to town_like_path(@town), method: :delete do %>
+          <i class="fas fa-heart"></i><%= @town.likes.count %>
+        <% end %>
+      <% else %>
+        <%= link_to town_likes_path(@town), method: :post do %>
+          <i class="far fa-heart"></i><%= @town.likes.count %>
+        <% end %>
+      <% end %>
+    <% else %>
+      <i class="far fa-heart"></i><%= @town.likes.count %>
+    <% end %>
+</div>
+
+  <%= link_to "編集", edit_town_path(@town.id), class:"field_input" %>
+
+<div class="liked_user">
+<div class="liked_user_title">
+いいねしたユーザー
+</div>
+<div class="liked_user_detail">
+<% @town.liked_users.each do |user| %>
+  <li><%= user.email %></li>
+<% end %>
+</div>
+</div>
+
+<div class="comment">
+  <div class="comment-title">
+  コメント一覧
+  </div>
+  <div class="comment-detail">
+  <% @comments.each do |c| %>
+    <div>
+      <%= c.content %>
+      <br>
+      <%= c.user.email unless c.user.blank? %>
+    </div>
+      <br>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <%= form_with(model: [@town, @comment], local: true) do |f| %>
+      <%= f.text_area :content, class:"field_input200" %>
+      <%= button_tag type: "submit" do %>
+        <i class="far fa-comments"></i> コメントする
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+
+<%= link_to "投稿一覧に戻る", towns_index_path, class:"field_input100" %>
+</div>
+</div>
+</div>

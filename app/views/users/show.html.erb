@@ -1,0 +1,41 @@
+<div class=my_page>
+  <div class=my_page_field>
+  <div class=my_page_title>
+  マイページ
+  </div>
+
+  <div class=my_page_name>
+  名前 : <%= @user.name %>
+  </div>
+  <div class=my_page_mail>
+  メールアドレス : <%= @user.email %>
+  </div>
+  <div class=my_page_profile>
+  プロフィール : <%= @user.profile %>
+  </div>
+
+  <div class=your_post>
+   あなたの投稿一覧 ：
+<% @user.towns.each do |t| %>
+  <%= t.about %>
+<% end %>
+  </div>
+
+<div class=your_heart>
+あなたがいいねした投稿一覧 ：
+<% @user.liked_towns.each do |t| %>
+  <%= t.about %>
+<% end %>
+</div>
+
+<div class=link>
+<% if current_user.id == @user.id %>
+  <%= link_to "マイページを編集", edit_user_registration_path, class:"my_page_edit" %>
+<% end %>
+
+<div class=index_link>
+<%= link_to "投稿一覧に戻る", towns_index_path, class:"back_index" %>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,23 @@
+.post_edit{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 100px 0px;
+    height: 800px;
+    text-align: center;
+
+    .post_edit_field{
+        width: 880px;
+        height: 400px;
+        background-color: #f7ce75;
+        margin: 0 auto;
+        border-radius: 10vh;
+        
+        
+        .edit_title{
+            font-size: 25px;
+            margin: 50px;
+            padding-top: 50px;
+        }
+    
+    }
+}

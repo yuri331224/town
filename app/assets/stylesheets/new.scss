@@ -1,0 +1,150 @@
+header {
+  background-color: #f7ce75;
+  height: 100px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kouryuu {
+  font-size: 20px;
+  color: black;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+}
+
+a.btn-style-link10 {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  margin-right: auto;
+  position: absolute;
+  top: 6%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  }
+
+a.btn-style-link11 {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  margin-right: auto;
+  position: absolute;
+  top: 6%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+.post-container {
+    margin: 60px auto;
+    width: 75%;
+    height: 600px;
+    border: solid #f0f0f0;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+
+    .newpost{
+      font-size: 30px;
+      padding-top: 50px;
+      letter-spacing: 0.3em;
+    }
+
+    .newpost_detail{
+      font-size: 20px;
+      padding-top: 40px;
+      letter-spacing: 0.3em;
+      line-height: 2.5em;
+    }
+  }
+
+
+  .field10{
+    font-size: 20px;
+    padding-top: 40px;
+    letter-spacing: 1.2em;
+  }
+  
+  input[type="text"] {
+    width: 50%;
+    height: 50px;
+    border: 3px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  letter-spacing: 0.15em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  margin: 30px auto;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: black;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: black;
+}
+
+a.btn--radius {
+  border-radius: 50vh;
+}

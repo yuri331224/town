@@ -1,0 +1,90 @@
+.login{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 70px 0px;
+   
+    .log_in_box{
+       width: 880px;
+       height: 860px;
+       background-color: #f7ce75;
+       margin: 0 auto;
+       border-radius: 10vh;
+    }
+   
+      .titlelogin{
+       width: 880px;
+       height: 200px;
+       padding-top: 60px;
+      }
+        .titlelogin2{
+          width: 670px;
+          height: 80px;
+          margin: 0 auto;
+          font-size: 30px;
+          letter-spacing: 0.5em;
+          line-height: 80px;
+          text-align: center;
+        }
+   
+      .field_area_login{
+         width: 600px;
+         height: 372px;
+         margin: 0 auto;
+         text-align: center;
+         .field{
+            margin-bottom: 40px;
+            .field_input{
+               width: 600px;
+               height: 63px;
+               border: 0px none;
+   
+               font-size: 20px;
+               line-height: 63px;
+               letter-spacing: 0.5em;
+            }
+            .field_input2{
+               width: 60px;
+               height: 30px;
+               border: 0px none;
+            }
+            .hozon{
+               font-size: 15px;
+               line-height: 63px;
+               letter-spacing: 0.5em;
+ 
+             }
+         }
+      }
+   }
+   
+   .field_area_login2{
+      width: 600px;
+      margin: 0 auto;
+   
+      .field{
+         margin-bottom: 40px;
+         .field_input{
+            width: 600px;
+            height: 63px;
+            border: 0px none;
+   
+            font-size: 24px;
+            line-height: 63px;
+            letter-spacing: 0.5em;
+
+         }
+      }
+   }
+
+   .share{
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+   
+      .share_text{
+        font-size: 15px;
+        line-height: 19px;
+        color: black;
+        text-decoration: none;
+      }
+   }

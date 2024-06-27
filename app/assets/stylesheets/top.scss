@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .first-block {
+    margin: auto;
+    height: 450px;
+    background-color: #f7ce75;
+  }
+
+  .second-block {
+    height: 600px;
+    background-color: #f0f0f0;
+    display: flex;
+  }
+  
+  .third-block {
+    height: 100px;
+    background-color: #f7ce75;
+    display: flex;
+  }
+  
+  .third-block1 {
+    height: 250px;
+    background-color: #f7ce75;
+    display: flex;
+  }
+
+  .third-block2 {
+    width:100%;
+    height: 200px;
+    background-color: #f7ce75;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .forth-block {
+    margin: auto;
+    height: 700px;
+    background-color: #f0f0f0;
+  }
+
+  .forth-block2 {
+    margin: auto;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+  }
+
+  .forth-blocklast {
+    margin: auto;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+  }
+
+  footer{
+    height: 50px;
+    background-color: black;
+  }
+
+  .produce {
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-size: 20px;
+  }
+
+  .index-picture {
+    width: 10%;
+    height: auto; 
+    display: table-cell;
+    margin: 0 auto;
+    border-radius: 100vh;
+  }
+
+  .master {
+    margin: 30px auto;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-size: 30px;
+  }
+
+  .style0 {
+    height: 3px;
+    width: 30%;
+    background-color:black;
+    border:none;  
+    margin:  10px auto;
+  }
+
+  .maruwakari {
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-size: 18px;
+  }
+
+  .index-picture2 {
+    width: 45%;
+    height: auto; 
+  }
+
+  .text-left{
+    width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    line-height: 2.5;
+    letter-spacing: 0.6em;
+    font-size: 45px;
+  }
+
+  a.facility {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  position: absolute;
+  top: 145%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  }
+  
+
+  a.event {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  position: absolute;
+  top: 145%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  }
+
+  a.food {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  position: absolute;
+  top: 145%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  }
+
+  a.review {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  position: absolute;
+  top: 145%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  }
+
+  a.fukufuku {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  position: absolute;
+  top: 145%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  }
+
+.border100 {
+    position: absolute; /* 絶対位置指定 */
+    left: 250px; /* 横位置の指定 */
+    top: 136%; /* 縦位置の指定 */
+    background: #000000; /* 線の色指定 */
+    width: 3px; /* 線の幅指定 */
+    height: 20%; /* 線の高さ指定 */
+}
+
+.border2 {
+  position: absolute; /* 絶対位置指定 */
+  left: 580px; /* 横位置の指定 */
+  top: 136%; /* 縦位置の指定 */
+  background: #000000; /* 線の色指定 */
+  width: 3px; /* 線の幅指定 */
+  height: 20%; /* 線の高さ指定 */
+}
+
+.border3 {
+  position: absolute; /* 絶対位置指定 */
+  left: 820px; /* 横位置の指定 */
+  top: 136%; /* 縦位置の指定 */
+  background: #000000; /* 線の色指定 */
+  width: 3px; /* 線の幅指定 */
+  height: 20%; /* 線の高さ指定 */
+}
+
+.border4 {
+  position: absolute; /* 絶対位置指定 */
+  left: 1100px; /* 横位置の指定 */
+  top: 136%; /* 縦位置の指定 */
+  background: #000000; /* 線の色指定 */
+  width: 3px; /* 線の幅指定 */
+  height: 20%; /* 線の高さ指定 */
+}
+
+.facility1 {
+  letter-spacing: 0.3em;
+  font-size: 15px;
+  margin-top: 150px;
+  padding-left: 90px;
+  }
+
+.event1 {
+  letter-spacing: 0.3em;
+  font-size: 15px;
+  transform: translate(140px, 140px);
+  line-height: 2.5;
+  }
+
+.food1 {
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  transform: translate(290px, 140px);
+  line-height: 2.5;
+}
+
+.review1 {
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  transform: translate(440px, 140px);
+  line-height: 2.5;
+}
+
+.fukufuku1 {
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  transform: translate(600px, 140px);
+  line-height: 2.5;
+}
+
+a.btn-style-link {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+a.btn-style-link2 {
+  display: inline-block;
+  padding: 16px 30px;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 100vh;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.fukutomi {
+  text-align: center;
+  line-height: 2.5;
+  letter-spacing: 0.2em;
+  font-size: 30px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.detail {
+  text-align: center;
+  line-height: 2.5;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.rogo {
+  line-height: 2.5;
+  letter-spacing: 0.2em;
+  font-size: 17px;
+  padding-left: 100px;
+}
+
+.index-picture3 { 
+  height: 90%; 
+  padding-left: 30px;
+  border-radius: 130vh;
+}
+
+.index-picture4 { 
+  height: 90%;
+  padding-left: 100px;
+}
+
+.taue {
+  line-height: 2.5;
+  letter-spacing: 0.2em;
+  font-size: 17px;
+  padding-left: 30px;
+}

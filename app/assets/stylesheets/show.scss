@@ -1,0 +1,88 @@
+.post_detail{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 70px 0px;
+   
+    .post_detail_field{
+       width: 880px;
+       height: 1000px;
+       background-color: #f7ce75;
+       margin: 0 auto;
+       border-radius: 10vh;
+       text-align: center;    
+       font-size: 20px;
+
+   
+       .post_detail_title{
+       width: 880px;
+       height: 150px;
+       padding-top: 60px;
+       font-size: 30px;
+
+       .detail_about{
+        font-size: 20px;
+        padding-top: 20px;
+       }
+
+       .detail_time{
+        font-size: 20px;
+       }
+
+       .detail_heart{
+        font-size: 20px;
+       }
+      }
+
+      .field_input{
+        font-size: 20px;
+      }
+
+      .liked_user{
+        .liked_user_title{
+            font-size: 30px;
+            padding-top: 50px;
+        }
+
+        .liked_user_detail{
+            font-size: 20px;
+        }
+      }
+
+      .comment{
+        .comment-title{
+            font-size: 30px;
+            padding-top: 50px;
+        }
+        .comment-detail{
+            font-size: 20px;
+            padding-top: 20px;
+        }
+        
+        .field_input200{
+            width: 600px;
+            height: 63px;
+            border: 0px none;
+   
+            font-size: 24px;
+            line-height: 63px;
+            letter-spacing: 0.5em;
+      }
+      .button1{
+        width: 600px;
+        height: 63px;
+        border: 0px none;
+
+        font-size: 24px;
+        line-height: 63px;
+        letter-spacing: 0.5em;
+        border-radius: 5vh;
+  }
+    }
+
+    .field_input100{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+}
+}

@@ -1,0 +1,58 @@
+<div class="mypage_edit">
+  <div class="mypage_edit_field">
+  <div class="mypage_edit_title">
+  マイページの編集
+  </div>
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"field_input", :placeholder =>"名前" %>
+  </div>
+
+  <div class="field">
+    <div class="profile">
+    <%= f.text_area :profile, autofocus: true, class:"field_input", :placeholder =>"プロフィール" %>
+    </div>
+  </div>
+  
+  <div class="field">
+    <div class="email">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"field_input", :placeholder =>"メールアドレス" %>
+    </div>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "new-password", class:"field_input", :placeholder =>"パスワード" %>
+    <% if @minimum_password_length %>
+      <br />
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"field_input", :placeholder =>"新しいパスワード" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :current_password, autocomplete: "current-password", class:"field_input", :placeholder =>"新しいパスワードの確認" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "編集", class:"field_input" %>
+  </div>
+<% end %>
+
+<div class="cancel">
+  
+<%= button_to "アカウントを削除する", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class:"field_input" %>
+
+<%= link_to "戻る", :back, class:"field_input" %>
+</div>
+</div>
+</div>

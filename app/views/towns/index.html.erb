@@ -1,0 +1,74 @@
+<header>
+  <p class="kouryuu">
+  福富町の人と交流しよう！
+  </p>
+  <a href="http://localhost:3000/towns" class="btn-style-link10">ホーム</a>
+  <a href="http://localhost:3000/towns/new" class="btn-style-link11">新規投稿</a>
+</header>
+
+<div class="towns-index">
+  <p class="reserch">
+  ◀ 投稿を検索 ▶
+  </p>
+
+ <%= form_tag({controller:"towns",action:"index"}, method: :get) do %>
+   <%= text_field_tag :search %>
+   <button type="reserch_tag" class="btn btn--orange btn--radius">検索</button>
+ <% end %>
+
+<div class="list1">
+  ◀ 投稿一覧 ▶
+</div>
+
+  <div class="towns-container">
+    <% @towns.each do |t| %>
+
+      <div class="towns">
+      <div class="content">
+      <%= t.about %>
+      <%= image_tag t.image_url, size: "250x300" if t.image? %>
+      </div>
+      <div class="name">
+      <%= link_to t.user.name, user_path(t.user.id) %>
+      </div>
+
+      <div class="heart">
+    <% if user_signed_in? %>
+    <% if current_user.already_liked?(t) %>
+        <%= link_to town_like_path(id: t.id, town_id: t.id), method: :delete do %>
+            <i class="fas fa-heart"></i><%= t.likes.count %>
+        <% end %>
+    <% else %>
+        <%= button_to town_likes_path(id: t.id, town_id: t.id), method: :post do %>
+            <i class="fas fa-heart"></i><%= t.likes.count %>
+        <% end %>
+    <% end %>
+    <% else %>
+    <i class="fas fa-heart"></i><%= t.likes.count %>
+    <% end %>
+    </div>
+    <div class="time">
+      <%= t.created_at %>
+      </div>
+      <div class="links">
+        
+      <!--<%= link_to "削除", town_path(t.id) %>-->
+      <% if user_signed_in? && current_user.id == t.user_id %>
+      <%= link_to "詳細へ", town_path(t.id) %>
+      <%= link_to "編集", edit_town_path(t.id) %>
+      <%= button_to "削除", town_path(t.id), method: :delete %>
+      </div>
+    <% end %>
+    </div>
+
+
+<% end %>
+</div>
+
+<div class="index_link">
+<% if user_signed_in? %>
+   <%= link_to "マイページへ", user_path(current_user.id), class:"field_input" %>
+<% end %>
+<%= button_to 'ログアウト', destroy_user_session_path, method: :delete, class:"btn btn-secondary" %>
+</div>
+</div>

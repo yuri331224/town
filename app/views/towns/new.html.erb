@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag 'new', :media => "all" %>
+
+<header>
+  <p class="kouryuu">
+  福富町の人と交流しよう！
+  </p>
+  <a href="http://localhost:3000/towns" class="btn-style-link10">ホーム</a>
+  <a href="http://localhost:3000/towns/new" class="btn-style-link11">新規投稿</a>
+</header>
+
+<div class="post-container">
+ <div class=newpost>
+  ◀ 新規投稿 ▶
+  </div>
+ <div class=newpost_detail>
+  福富町についての疑問、興味が出たことを共有しよう🌟
+  <br>福富町の方から返信が来ることも・・・？
+  </div>
+
+<%= form_for @town do |f| %>
+  <div class="field10">
+    <br>
+    <%= f.label :投稿内容 %>
+    <br>
+    <%= f.text_field :about,size: "30x5" %>
+    <!--<%= f.text_area :about, class: "hoge", size: "50x5" %>-->
+    <br>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  
+  <button type="submit_tag" class="btn btn--orange btn--radius">投稿する</button>
+  <!--<a href="submit"value="投稿する"> class="btn btn--orange btn--radius">SUBMIT</a>-->
+  <!--<%= f.submit "投稿する" %>-->
+  <br>
+<% end %>
+
+<!--<%= link_to "投稿一覧に戻る", towns_index_path %>-->
+</div>

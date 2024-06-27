@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.first-block2 {
+    height: 100px;
+    background-color: #f7ce75;
+    text-align: center;
+}
+  
+.second-block2 {
+    height: 500px;
+    background-color: #f0f0f0;
+    display: flex
+}
+  
+.second-block3 {
+    height: 500px;
+    background-color: #f0f0f0;
+    display: flex
+}
+
+.third-block3 {
+    height: 600px;
+    background-color: #f0f0f0;
+    display: flex
+}
+
+.forth-block3 {
+    height: 700px;
+    background-color: #f0f0f0;
+    display: flex
+}
+
+.forth-block4 {
+    height: 700px;
+    background-color: #f0f0f0;
+    display: flex
+}
+
+.forth-block5 {
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex
+}
+
+footer{
+    height: 50px;
+    background-color: #f7ce75;
+}
+
+.facilitylabel {
+    letter-spacing: 0.2em;
+    font-size: 27px;
+    padding-top: 30px;
+}
+
+.box {
+    position: relative;
+}
+
+.mitinoekiname {
+    position: absolute;
+    top: 260px;
+    left: 230px;
+    font-size: 30px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.facility-picture1 {
+    height: 90%;
+    padding-left: 100px;  
+    padding-top: 100px; 
+    margin: 20px;
+}
+
+.mitinoeki {
+    letter-spacing: 0.2em;
+    font-size: 22px;
+    padding-top: 100px;
+    line-height: 2.7;
+}
+
+.border5 {
+    position: absolute; /* 絶対位置指定 */
+    left: 60px; /* 横位置の指定 */
+    top: 87%; /* 縦位置の指定 */
+    background: #f7ce75; /* 線の色指定 */
+    width: 6px; /* 線の幅指定 */
+    height: 40%; /* 線の高さ指定 */
+}
+
+.facility-picture2 {
+    height: 90%;
+    padding-left: 100px;  
+    padding-top: 100px; 
+    margin: 10px;
+}
+
+.fukkudetail {
+    letter-spacing: 0.2em;
+    font-size: 22px;
+    padding-top: 100px;
+    padding-left: 150px;
+    line-height: 2.7;
+}
+
+.border6 {
+    position: absolute; /* 絶対位置指定 */
+    left: 1360px; /* 横位置の指定 */
+    top: 87%; /* 縦位置の指定 */
+    background: #f7ce75; /* 線の色指定 */
+    width: 6px; /* 線の幅指定 */
+    height: 40%; /* 線の高さ指定 */
+}
+
+.box2 {
+    position: relative;
+}
+
+.miyabiname {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    font-size: 30px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.facility-picture3 {
+    height: 100%;
+    padding-left: 140px;  
+    padding-top: 140px; 
+    opacity: 0.7;
+}
+
+.miyabidetail {
+    letter-spacing: 0.2em;
+    font-size: 22px;
+    padding-top: 140px;
+    padding-left: 80px;
+    line-height: 2.5;
+}
+
+.interview{
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 1100px;
+
+    .interview_photo{
+        display: flex;
+        height: 500px;
+
+        .facility-picture33 {
+        height: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        }
+
+        .facility-picture34 {
+        height: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        }
+    }
+
+    .interview_title{
+        font-size: 30px;
+        letter-spacing: 0.2em;
+        border-bottom: 6px double black;
+        line-height: 2.5;
+    }
+
+    .interview_comment{
+        font-size: 20px;
+        line-height: 2.5;
+        letter-spacing: 0.2em;
+        padding-top: 50px;
+    }
+}
+
+
+.box3 {
+    position: relative;
+}
+
+.cadorename {
+    position: absolute;
+    top: 290px;
+    left: 310px;
+    font-size: 30px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.facility-picture4 {
+    height: 70%;
+    padding-left: 140px;  
+    padding-top: 140px; 
+    opacity: 0.7;
+}
+
+.cadoredetail {
+    letter-spacing: 0.2em;
+    font-size: 22px;
+    padding-top: 140px;
+    padding-left: 80px;
+    line-height: 2.5;
+}
+
+.box4 {
+    position: relative;
+}
+
+.facility-picture5 {
+    height: 70%;
+    margin: 0 auto;
+    outline: 10px solid #f7ce75;
+
+}
+
+.facility-picture6 {
+    height: 70%;   
+    outline: 10px solid #f7ce75;
+}
+
+.example hr {
+    transform: rotate(45deg);
+    width: 100px;
+    border: 0;
+    border-top: 3px solid black;
+    margin-left: 300px;
+}
+
+.animal {
+    letter-spacing: 0.2em;
+    font-size: 22px;
+    line-height: 2.7;
+    margin: 0 auto;
+    margin-left: 100px;
+
+}
+
+.example2 hr {
+    transform: rotate(135deg);
+    width: 100px;
+    border: 0;
+    border-top: 3px solid black;
+    margin-right: 250px;
+}

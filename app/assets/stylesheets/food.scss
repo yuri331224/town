@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .first-block8 {
+    height: 100px;
+    background-color: #f7ce75;
+    text-align: center;
+  }
+  
+  .first-block8_1 {
+    height: 300px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .first-block8_2 {
+    height: 600px;
+    background-color: #f0f0f0;
+    display: flex;
+  }
+
+  .second-block8_1 {
+    height: 700px;
+    background-color: #f0f0f0;
+    display: flex;
+  }
+
+  .second-block8_2 {
+    height: 500px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+
+  .second-block8_3 {
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    text-align: center;
+  }
+  
+  .third-block8_1 {
+    height: 800px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+
+  .forth-block {
+  height: 500px;
+  background-color: #f0f0f0;
+  }
+
+  footer{
+    height: 50px;
+    background-color: #000;
+  }
+
+  .foodlabel {
+    letter-spacing: 0.2em;
+    font-size: 27px;
+    padding-top: 30px;
+}
+
+.tokusanhin {
+    letter-spacing: 0.2em;
+    font-size: 25px;
+    padding-top: 60px;
+}
+
+.egoma {
+    letter-spacing: 0.2em;
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.food-picture1 {
+    height: 60%;
+    padding-left: 100px;  
+    margin: 20px;
+}
+
+.egomadetail1 {
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    line-height: 3.8em;
+    padding-left: 30px; 
+    padding-top: 30px;
+}
+
+.food-picture2 {
+    height: 70%;
+    padding-left: 200px;  
+    margin: 20px;
+}
+
+.egomadetail2 {
+    letter-spacing: 0.3em;
+    font-size: 20px;
+    line-height: 3.0em;
+    padding-left: 70px; 
+  
+  }
+
+.egomadetail3 {
+    margin: 0 auto;
+    position: absolute;
+    left: 200px;
+    letter-spacing: 0.2em;
+    font-size: 17px;
+    line-height: 3.0em;
+    padding-top: 10px;
+}
+
+.rectangle {
+    width: 95%;
+    height: 400px;
+    background-color: #f7ce75;
+    margin: 0 auto;
+    
+}
+
+.food-picture3 {
+    height: 30%;
+    padding-left: 420px;
+}
+
+.egomadetail4 {
+    letter-spacing: 0.2em;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.quiz {
+    margin: 0 auto;
+    letter-spacing: 0.2em;
+    font-size: 18px;
+    line-height: 3.0em;
+}
+
+.q {
+    box-shadow: 1px 1px 5px 2px #ccc;
+    margin-inline: auto;
+    margin-top: 20px;
+    max-width: 900px;
+    padding: 1em;
+    width: 95%;
+    font-size: 18px;
+}
+
+.a {
+    box-shadow: 1px 1px 5px 2px #ccc;
+    margin-inline: auto;
+    margin-top: 20px;
+    max-width: 900px;
+    padding: 1em;
+    width: 95%;
+    font-size: 18px;
+    line-height: 3.0em;
+}

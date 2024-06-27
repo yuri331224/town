@@ -1,0 +1,11 @@
+<div class=post_edit>
+  <div class=post_edit_field>
+    <div class=edit_title>
+      投稿内容を変更する
+    </div>
+<%= form_for @town do |f| %>
+    <%= f.text_field :about, :size => "50x2" %> 
+    <button type="submit_tag" class="btn btn--orange btn--radius">編集する</button>
+  <% end %>
+  </div>
+</div>

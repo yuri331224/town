@@ -1,0 +1,21 @@
+<div class="newpassword">
+  <div class="newpassword_field">
+  <div class="newpasswordtitle">
+  新しいパスワードを作成
+  </div>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"field_input", :placeholder =>"メールアドレス" %>
+  </div>
+
+  <div class="field">
+    <%= f.submit "パスワードを新しくする", class:"field_input" %>
+  </div>
+<% end %>
+
+<%= render "users/shared/links" %>
+</div>
+</div>
